@@ -3,7 +3,13 @@ package tudelft.chocolate;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-
+// No se realizaron cambios porque lo que pidio el ejercicio 1 ya esta hecho.
+// Sugerencias de mejora para optimizar el código:
+//- Renombrar los métodos de prueba para mayor claridad.
+//- Agregar más casos de prueba para mejorar la cobertura.
+//- Usar @BeforeEach para evitar instanciación repetitiva de ChocolateBags.
+//- Reorganizar los datos en @CsvSource para mejorar la legibilidad.
+//Las pruebas actuales cumplen con lo pedido, pero estos cambios podrían mejorarlo.
 public class ChocolateBagsTest {
     @ParameterizedTest(name = "small={0}, big={1}, total={2}, result={3}")
     @CsvSource({ "1,1,5,0", "1,1,6,1", "1,1,7,-1", "1,1,8,-1" })
@@ -36,3 +42,5 @@ public class ChocolateBagsTest {
         Assertions.assertEquals(expectedResult, result);
     }
 }
+
+
